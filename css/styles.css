@@ -21,7 +21,7 @@ body {
     padding: 0;
     
     /* Aplica a imagem de fundo, tamanho, repetição e cor de fundo */
-    background-image: url("/img/background.jpg");
+    background-image: url("../img/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
