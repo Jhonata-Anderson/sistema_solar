@@ -1,0 +1,281 @@
+/* Importa a fonte Montserrat do Google Fonts para uso em toda a página */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Importa um arquivo CSS externo para estilizar o cabeçalho */
+@import url('./header.css');
+
+/* Define variáveis personalizadas para a fonte e a cor branca, facilitando a reutilização */
+:root {
+    --fonte: 'Montserrat'; /* Define a fonte padrão */
+    --branco: #FFFFFF; /* Define a cor branca padrão */
+}
+
+/* Estiliza o corpo da página */
+body {
+    /* Define a altura do corpo como 100% da viewport */
+    height: 100vh;
+    /* Impede que o conteúdo extrapole as bordas do corpo */
+    overflow: hidden;
+    /* Remove as margens e o padding padrão do corpo */
+    margin: 0;
+    padding: 0;
+    
+    /* Aplica a imagem de fundo, tamanho, repetição e cor de fundo */
+    background-image: url("/img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    
+    /* Define a fonte e a cor do texto do corpo */
+    font-family: var(--fonte);
+    color: var(--branco);
+    }
+
+/* Cria um container flex para centralizar os elementos da seção principal */
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* Ocupa toda a altura e largura da viewport */
+    height: 100vh;
+    width: 100%;
+    }
+
+/* Cria um container flex para a área de pesquisa */
+.principal_pesquisa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estiliza o título da pesquisa */
+.principal_pesquisa h1 {
+    font-size: 5rem;
+    margin: 0;
+}
+
+/* Estiliza o campo de entrada da pesquisa */
+.principal_pesquisa input {
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 30rem;
+    margin: 5rem 0 1rem 0;
+    background-color: black;
+    font-family: var(--fonte);
+    color: var(--branco);
+}
+
+/* Estiliza o placeholder da pesquisa */
+.principal_pesquisa input::placeholder {
+    font-family: var(--fonte);
+    color: var(--branco);
+}
+
+/* Estiliza o botão de pesquisa */
+.principal_pesquisa button {
+    background: linear-gradient(to right, #1d1df7, #1489ff);
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    padding: 1rem 5rem;
+    color: var(--branco);
+}
+
+/* Estiliza o que irá acontecer quando o mouse passar no botão */
+.principal_pesquisa button:hover {
+    background:linear-gradient(#1489ff, #1d1df7);
+}
+
+/* Estiliza o texto */
+.mensagem-nada {
+    text-align: center;
+    color: var(--branco);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* Estiliza a seção de resultados da pesquisa */
+.resultados-pesquisa {
+    /* Torna a área dos resultados um container flexbox */
+    display: flex;
+    /* Organiza os itens dos resultados em uma coluna vertical */
+    flex-direction: column;
+    /* Define a largura da área dos resultados */
+    width: 60rem;
+    /* Define a altura mínima da área */
+    min-height: 46vh;
+    /* Permite rolagem vertical se necessário */
+    overflow-y: auto;
+    /* Aplica margens à área */
+    margin: 1rem 0 3rem 0;
+    /* Arredonda as bordas da área */
+    border-radius: 0.6rem;
+    /* Adiciona espaço interno à área */
+    padding: 1rem;
+}
+
+/* Estiliza as imagens dos resultados */
+.resultados-pesquisa img {
+    /* Define a largura e altura da imagem */
+    width: 12.1rem;
+    height: 12.1rem;
+    /* Arredonda o canto superior esquerdo da imagem */
+    border-radius: 0.6rem 0 0 0.6rem;
+    /* Adiciona uma sombra leve à imagem */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Cria um container flex para a imagem*/
+.resultados-pesquisa-imagem {
+    display: flex;
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    /* Torna o item um container flexbox */
+    display: flex;
+    /* Cria um espaço entre os elementos dentro do item */
+    column-gap: 1rem;
+    /* Define a cor do texto do item */
+    color: var(--branco);
+    /* Adiciona espaço interno ao item */
+    padding: 1rem;
+    /* Cria um espaço entre os itens */
+    margin-bottom: 1rem;
+    /* Arredonda os cantos inferiores do item */
+    border-radius: 0 0.6rem 0.6rem 0;
+    /* Adiciona uma sombra leve ao item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Reduz ligeiramente a opacidade do item */
+    opacity: 95%;
+}
+
+/* Define o gradiente de cores para o Sol */
+.sol {
+    background: linear-gradient(to right, #b33300, #3b0900);
+}
+
+/* Define o gradiente de cores para o planeta Mercurio */
+.mercurio {
+    background: linear-gradient(to right, #444444, #181818);
+}
+
+/* Define o gradiente de cores para o planeta Venus */
+.venus {
+    background: linear-gradient(to right, #a33400, #461400);
+}
+
+/* Define o gradiente de cores para o planeta Terra */
+.terra {
+    background: linear-gradient(to right, #051281, #000833);
+}
+
+/* Define o gradiente de cores para o planeta Marte */
+.marte {
+    background: linear-gradient(to right, #c5a154, #602170);
+}
+
+/* Define o gradiente de cores para o planeta Júpiter */
+.jupiter {
+    background: linear-gradient(to right, #c2c2c2, #4e3900);
+}
+
+/* Define o gradiente de cores para o planeta Saturno */
+.saturno {
+    background: linear-gradient(to right, #ad8445, #382f15);
+}
+
+/* Define o gradiente de cores para o planeta Urano */
+.urano {
+    background: linear-gradient(to right, #4dcedf, #014d5a);
+}
+
+/* Define o gradiente de cores para o planeta Netuno */
+.netuno {
+    background: linear-gradient(to right, #384cff, #002079);
+}
+
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    color: var(--branco);
+}
+
+/* Responsividade para tablets e dispositivos menores que 768px */
+@media (max-width: 768px) {
+    /* Diminui o tamanho da fonte do título da pesquisa */
+    .principal_pesquisa h1 {
+        font-size: 2rem;
+        /* Aumenta o espaçamento entre as letras do título */
+        letter-spacing: 0.2rem;
+    }
+
+    /* Diminui a largura do campo de entrada */
+    .principal_pesquisa input {
+        width: 25rem;
+        /* Diminui o padding interno do campo de entrada */
+        padding: 0.8rem;
+    }
+
+    /* Diminui a largura e a altura da área de resultados */
+    .resultados-pesquisa {
+        width: 40rem;
+        height: 40vh;
+    }
+
+    /* Diminui o tamanho das imagens dos resultados */
+    .resultados-pesquisa img {
+        width: 15.2rem;
+        height: 15.05rem;
+    }
+
+    /* Diminui o tamanho da fonte dos títulos dos itens de resultado */
+    .item-resultado h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Responsividade para celulares (telas menores que 480px) */
+@media (max-width: 480px) {
+    /* Diminui ainda mais o tamanho da fonte do título */
+    .principal_pesquisa h1 {
+        font-size: 1.8rem;
+        /* Diminui o espaçamento entre as letras do título */
+        letter-spacing: 0.1rem;
+    }
+
+    /* Diminui a largura do campo de entrada */
+    .principal_pesquisa input {
+        width: 17rem;
+    }
+
+    /* Diminui o padding e o tamanho da fonte do botão */
+    .principal_pesquisa button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Aumenta a largura da área de resultados para ocupar quase toda a tela */
+    .resultados-pesquisa {
+        width: 90%;
+        height: 50vh;
+    }
+
+    /* Oculta as imagens dos resultados para economizar espaço */
+    .resultados-pesquisa img {
+        display: none;
+    }
+
+    /* Arredonda todas as bordas do item de resultado */
+    .item-resultado {
+        border-radius: 0.6rem;
+    }
+
+    /* Diminui o tamanho da fonte dos títulos dos itens de resultado */
+    .item-resultado h2 {
+        font-size: 1.1rem;
+    }
+}

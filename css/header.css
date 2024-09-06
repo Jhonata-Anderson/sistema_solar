@@ -1,0 +1,17 @@
+.nav-lista {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lista-link a {
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.lista-link a:hover {
+    font-weight: 300;
+}
